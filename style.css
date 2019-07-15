@@ -1,0 +1,11 @@
+#myCanvas{
+    transform: rotate( 22deg );
+    transition: ease 1s;
+  }
+#myCanvas:hover{
+    transform: rotate( 67deg);
+  }
+
+#cw_1:visited{
+    
+}
