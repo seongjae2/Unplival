@@ -3,25 +3,55 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>UNPLIVAL</title>
+	<title>UNPLIVAL : 찰리네 초콜릿 공장</title>
+	<link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
-  
-  <link rel="stylesheet" href = "style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 
 </head>
 
 <body>
-  <!-- <h1>UNPLIVAL</h1> -->
-	<div>
-		<canvas id="myCanvas"></canvas>
+	<h1 id="title">Charlie and the Chocolate Factory</h1>
+	<div id="bag" style="position:fixed; top:0; right:0; z-index:1; margin-right: 275px; margin-top: 5px;">
+		<img src="image/bag.png" style="width: 115px">
+	</div>
+	<div style="position:fixed; top:0; left:0; z-index:2; margin-left: 20px; margin-top: 20px;">
+		<a href="index.html"><img src="image/chocolate.png" alt="alternative text" title="click to refresh" ></a><b id="chocolateNumber"></b>
+		<hr>
+		<b id="cardNumber">카드 사용 횟수 :</b>
 	</div>
 	<div>
-		<button id ="cw_1" onclick="rotateCW()">CW*1</button>
-  <button id ="cw_2">RCW*2</button>
-</div>
+		<canvas style="z-index:0" id="myCanvas"></canvas>
+	</div>
 
-<script src="script.js"></script>
+	<div style="position:fixed;bottom:0;left:0;z-index:2" id="commandworld">
+		<input type="text" onkeydown="doit(event)">
+		<hr>
+		<img src="image/짜기.png"> Q
+		<img src="image/만없 짜기.png"> W
+		<img src="image/스위치.png"> E
+		<img src="image/만있 시계 1 회전.png"> R
+		<img src="image/만있 반시계 1 회전.png"> T
+
+		<br>
+		<img src="image/시계 1 회전.png"> A
+		<img src="image/반시계 1 회전.png"> S
+		<img src="image/시계방향2.png"> D
+		<img src="image/반시계 방향 2.png"> F
+		<br>
+		<img src="image/꺼내기.png"> Z
+		<img src="image/만있 꺼내기.png"> X
+		<img src="image/만있 굳히고 꺼내기.png"> C
+		<img src="image/만없 꺼내기.png"> V
+	</div>
+	<div style="position:fixed; bottom:0; right:0; z-index:1; margin-right: 15px; margin-bottom: 10px;">
+		<img src="image/snoopyeating.gif" style="width: 120px">
+	</div>
+
+
+	<div style="width: 200%; height:200%; margin:-50%;z-index:1;position:fixed;left:0;top:0;"></div>
+	<script src="script.js"></script>
 </body>
 
 
